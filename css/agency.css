@@ -8,7 +8,8 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  /*color: #777777;*/
+  color: lightpink;
 }
 .text-primary {
   color: #fed136;
@@ -263,10 +264,15 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header2.jpg');
-  background-color: black;
+
+  background: -webkit-radial-gradient(white 10%, gray 20%, black 70%);
   height: 50vh;
   width: 100%;
+  text-align: center;
+  color: white;
+}
+header .container {
+  background-image: url('../img/header2.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -274,8 +280,8 @@ header {
   -moz-background-size: contain;
   background-size: contain;
   -o-background-size: contain;
-  text-align: center;
-  color: white;
+  height: 100%;
+  width: 100%;
 }
 header .intro-text {
   padding-top: 100px;
@@ -326,10 +332,10 @@ section {
   padding: 100px 0;
 }
 section h2.section-heading {
-  font-size: 40px;
+  font-size: 70px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: white;
+  color: LightPink;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -337,7 +343,9 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
+  margin-top: 45vh;
   margin-bottom: 75px;
+  line-height: 30px;
 }
 @media (min-width: 768px) {
   section {
@@ -351,12 +359,13 @@ section h3.section-subheading {
 
 #about {
   background-image: url(../img/about.jpg);
-  background-size: auto 70vh;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-color: LightPink;
+  background-position: bottom center;
+  background-color: black;
   height: 100vh;
   width: 100%;
+  border-top: 2px solid pink;
 }
 
 #portfolio .portfolio-item {
