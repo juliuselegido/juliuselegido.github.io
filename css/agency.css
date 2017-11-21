@@ -351,9 +351,6 @@ section h3.section-subheading {
   section {
     padding: 150px 0;
   }
-  #description {
-    margin-top: 40vh;
-  }
 }
 .service-heading {
   margin: 15px 0;
@@ -362,12 +359,43 @@ section h3.section-subheading {
 
 #about {
   background-image: url(../img/about.jpg);
-  background-size: cover;
+  background-size: auto 40em;
+  -webkit-background-size: auto 40em;
+  -moz-background-size: auto 40em;
+  -o-background-size: auto 40em;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   background-color: black;
-  /*height: 100vh;
-  width: 100%;*/
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 55px 10px 0 10px;
+}
+
+#description h3.section-subheading {
+  padding: 0 15px;
+  margin-top: 18em;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  #about {
+    text-align: left;
+    height: 95vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+  }
+  #description {
+    margin-top: 50vh;
+  }
+  #description h3.section-subheading {
+    padding: 0 0;
+    margin-top: auto;
+  }
+
 }
 
 #portfolio .portfolio-item {
