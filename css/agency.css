@@ -329,7 +329,7 @@ header .intro-text .intro-heading {
 section {
   padding: 55px 0;
   border-top: 2px solid pink;
-  background-color: black;
+  /*background-color: black;*/
 }
 
 section h2.section-heading {
@@ -349,19 +349,30 @@ section h3.section-subheading {
   line-height: 30px;
 }
 
+#gradientBackground {
+  background: -moz-linear-gradient(top, #000000 0%, #ffb6c1 50%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #000000 0%,#ffb6c1 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #000000 0%,#ffb6c1 50%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 section#portfolio {
   padding-bottom: 0;
-  background: -moz-linear-gradient(top, #000000 1%, #ffb6c1 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #000000 1%,#ffb6c1 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #000000 1%,#ffb6c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*background: -moz-linear-gradient(top, #000000 1%, #ffb6c1 100%);
+  background: -webkit-linear-gradient(top, #000000 1%,#ffb6c1 100%);
+  background: linear-gradient(to bottom, #000000 1%,#ffb6c1 100%); */
 }
+
 section#photo {
   border-top: none;
   padding-top: 50px;
   padding-bottom: 86px;
-  background: -webkit-linear-gradient(#ffb6c1 0%, #000000 100%);
+  /*background: -webkit-linear-gradient(#ffb6c1 0%, #000000 100%);
   background: -o-linear-gradient(#ffb6c1 0%, #000000 100%);
-  background: linear-gradient(#ffb6c1 0%, #000000 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(#ffb6c1 0%, #000000 100%); */
+}
+
+section#photo .section-heading {
+  color: lightpink;
 }
 
 #myCarousel .item img {
@@ -385,6 +396,10 @@ section#photo {
 
   section h2.section-heading {
     font-size: 70px;
+  }
+
+  section#photo .section-heading {
+    color: black;
   }
 
   #myCarousel .item img {
