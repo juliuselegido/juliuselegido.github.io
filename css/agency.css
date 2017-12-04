@@ -151,7 +151,8 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
+  /*background-color: #222222;*/
+  background-color: black;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -215,6 +216,7 @@ fieldset[disabled] .btn-xl.active {
   /*background-color: #fec503;*/
   background-color: pink;
 }
+
 @media (min-width: 768px) {
   .navbar-nav {
       float: none;
