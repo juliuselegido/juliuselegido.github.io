@@ -30,5 +30,16 @@
         }
     })
 
+    $('.close-modal').click(function(){
+      console.log('working out there')
+      var iframes = $('iframes');
+      if (iframes != null) {
+        console.log('working in here')
+        for (var i = 0; i < iframes.length; i++) {
+            iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
+        }
+    }
+  })
+
 
 })(jQuery); // End of use strict

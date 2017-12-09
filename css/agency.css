@@ -728,10 +728,19 @@ aside.clients img {
 section#contact {
   background-color: black;
   padding-top: 75px;
-  /*background-image: url('../img/map-image.png');*/
-  background-position: center;
-  background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  section#contact {
+    height: 80vh;
+    background-image: url('../img/contactimage.png');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+  }
+}
+
 section#contact .section-heading {
   color: lightpink;
 }
@@ -798,6 +807,8 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   text-align: center;
+  background-color: LightPink;
+  color: black;
 }
 footer span.copyright {
   line-height: 40px;
