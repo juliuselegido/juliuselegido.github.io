@@ -732,14 +732,16 @@ section#contact {
 
 @media (min-width: 768px) {
   section#contact {
-    height: 80vh;
-    background-image: url('../img/contactimg.png');
+    height: auto;
+    /*background-image: url('../img/contactimg.png');*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     background-position: center center;
+    padding-bottom: 75px;
   }
+
 }
 
 section#contact .section-heading {
