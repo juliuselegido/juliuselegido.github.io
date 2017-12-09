@@ -735,6 +735,20 @@ section#contact {
 section#contact .section-heading {
   color: lightpink;
 }
+
+section#contact .contactinfo {
+  margin: 10px auto;
+}
+
+section#contact .fa {
+  color: black;
+  font-size: 3em;
+  background-color: pink;
+  border-radius: .25em;
+  padding: .25em;
+  width: 100%;
+}
+
 section#contact .form-group {
   margin-bottom: 25px;
 }
