@@ -31,12 +31,15 @@
     })
 
     $('.close-modal').click(function(){
-      console.log('working out there')
-      var iframes = $('iframes');
-      if (iframes != null) {
+      var iframes = $('iframe');
+      var portfolioModal = $(this).css("display")
+      if (portfolioModal = "block") {
         console.log('working in here')
+        console.log(iframes.length)
         for (var i = 0; i < iframes.length; i++) {
+          console.log('works?')
             iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
+
         }
     }
   })
